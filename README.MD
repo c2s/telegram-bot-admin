@@ -11,7 +11,57 @@
 |   Spring-Boot-Version: ${spring-boot.version}                                                         |
 |--------------------------------------------------------------------------------------------------------
 
-
-
-
 ```
+
+#### 后端
+- 基础框架：Spring Boot 2.0.4.RELEASE
+
+- 持久层框架：Mybatis 3.4.5
+
+- 安全框架：Apache Shiro 1.4.0
+
+- 摸板引擎：Thymeleaf 3.0.9.RELEASE
+
+- 数据库连接池：阿里巴巴Druid 1.1.10
+
+- 缓存框架：Redis
+
+- 日志打印：logback
+
+- 其他：fastjson，poi，javacsv，quartz等。
+
+#### 前端
+ 
+- 基础框架：Bootstrap 4
+
+- JavaScript框架：jQuery
+
+- 消息组件：Bootstrap notify
+
+- 提示框插件：SweetAlert2
+
+- 树形插件：jsTree
+
+- 树形表格插件：jqTreeGrid
+
+- 表格插件：BootstrapTable
+
+- 表单校验插件：jQuery-validate
+
+- 多选下拉框插件：multiple-select
+
+- 图表插件：Highcharts
+
+- 时间插件：daterangepicker
+
+#### 开发环境
+
+- 语言：Java 8
+
+- IDE：IDEA 2018.1.4(Ultimate Edition)
+
+- 依赖管理：Maven
+
+- 数据库：MySQL5.7
+
+- 版本管理：SVN，git
