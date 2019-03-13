@@ -25,37 +25,15 @@
                     </div>
                 </div>
                 <div id="data-table_filter" class="dataTables_filter">
-                    <form class="log-table-form">
+                    <form class="message-table-form">
                         <div class="row">
-                        	<div class="col-sm-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-					               	操作时间：
-					            </span>
-                                    <div class="form-group">
-                                        <input type="text" name="timeField" class="form-control">
-                                        <i class="form-group__bar"></i>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-sm-3">
                                 <div class="input-group">
                                     <span class="input-group-addon">
-					               	操作用户：
+					               	标题：
 					            </span>
                                     <div class="form-group">
-                                        <input type="text" name="username" class="form-control">
-                                        <i class="form-group__bar"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-					               	描述：
-					            </span>
-                                    <div class="form-group">
-                                        <input type="text" name="operation" class="form-control">
+                                        <input type="text" name="title" class="form-control">
                                         <i class="form-group__bar"></i>
                                     </div>
                                 </div>
@@ -65,10 +43,10 @@
                     </form>
                 </div>
                 <div class="table-responsive">
-                    <table id="logTable" data-mobile-responsive="true" class="mb-bootstrap-table text-nowrap"></table>
+                    <table id="telegramMessageTable" data-mobile-responsive="true" class="mb-bootstrap-table text-nowrap"></table>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script data-th-src="@{js/app/system/log/message.js}"></script>
+<script data-th-src="@{js/app/system/telegram/message.js}"></script>
