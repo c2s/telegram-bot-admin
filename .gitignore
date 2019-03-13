@@ -1,8 +1,8 @@
 .classpath
 .project
 .settings/
-log/
-target/
+/log/
+/target/
 .idea/
 project.iml
 sonar-project.properties
