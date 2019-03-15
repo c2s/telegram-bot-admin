@@ -214,12 +214,13 @@
             <artifactId>jasypt-spring-boot-starter</artifactId>
             <version>2.1.0</version>
         </dependency>
-        <!-- telegram-bots-spring-boot -->
+        <!-- telegram-api -->
         <dependency>
-            <groupId>com.github.pengrad</groupId>
-            <artifactId>java-telegram-bot-api</artifactId>
-            <version>4.1.1</version>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>4.1.2</version>
         </dependency>
+
     </dependencies>
 
     <repositories>
