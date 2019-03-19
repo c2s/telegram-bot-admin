@@ -45,4 +45,21 @@ public class NoticeBot extends TelegramLongPollingBot {
         return BotConfig.NOTICE_TOKEN;
     }
 
+    public boolean  sendMessage(String chatId, String text)
+    {
+        if (chatId == null || text == null) {
+            return  false;
+        }
+        SendMessage message = new SendMessage() // Create a SendMessage object with mandatory fields
+                .setChatId(chatId)
+                .setText(text);
+        try {
+            execute(message); // Call method to send the message
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+
+        return  true;
+    }
+
 }

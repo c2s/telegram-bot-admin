@@ -17,10 +17,14 @@
 		                </a>
                         </ul>
                     </div> 
-                    <div class="dropdown actions__item" shiro:hasPermission="log:delete">
+                    <div class="dropdown actions__item" shiro:hasPermission="telegram:message-list">
                         <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="javascript:void(0)" class="dropdown-item" onclick="deleteLogs()" shiro:hasPermission="log:delete">删除日志</a>
+                            <a href="javascript:void(0)" class="dropdown-item" onclick="addMessage()" shiro:hasPermission="telegram-message:add">新建消息</a>
+                            <a href="javascript:void(0)" class="dropdown-item" onclick="updateMessage()" shiro:hasPermission="telegram-message:update">编辑消息</a>
+                            <a href="javascript:void(0)" class="dropdown-item" onclick="deleteMessage()" shiro:hasPermission="telegram-message:delete">删除消息</a>
+                            <!--<a href="javascript:void(0)" class="dropdown-item" onclick="downMessage()" shiro:hasPermission="telegram-message:status">下线</a>-->
+                            <!--<a href="javascript:void(0)" class="dropdown-item" onclick="upMessage()" shiro:hasPermission="telegram-message:status">上线</a>-->
                         </div>
                     </div>
                 </div>

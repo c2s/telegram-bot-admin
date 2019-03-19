@@ -56,7 +56,7 @@ public class TelegramMessage implements Serializable {
     /**
      * @param status
      */
-    public void setStatus(String status) {
+    public void setStatus(Integer status) {
         this.status = status == null ? null : 0;
     }
 

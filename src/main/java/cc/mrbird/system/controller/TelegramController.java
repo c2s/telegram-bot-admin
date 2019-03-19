@@ -45,13 +45,15 @@ public class TelegramController extends BaseController {
     @RequiresPermissions("telegram:message-list")
     @ResponseBody
     public Boolean sendTelegramMessage(QueryRequest request, TelegramMessage telegramMessage) {
-        TelegramBotsApi botsApi = new TelegramBotsApi();
-        try {
-            botsApi.registerBot(new NoticeBot());
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-        return true;
+//        TelegramBotsApi botsApi = new TelegramBotsApi();
+//        try {
+//            botsApi.registerBot(new NoticeBot());
+//        } catch (TelegramApiException e) {
+//            e.printStackTrace();
+//        }
+
+        NoticeBot noticeBot = new NoticeBot();
+        return noticeBot.sendMessage("-1001425086497" ,telegramMessage.getContent());
     }
 
 }
